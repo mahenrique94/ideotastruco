@@ -13,7 +13,9 @@
         android:layout_height="0dp"
         android:layout_marginBottom="2dp"
         android:orientation="vertical"
-        android:padding="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
         android:layout_weight="1"
         android:layout_width="fill_parent">
 
@@ -165,6 +167,7 @@
         <LinearLayout
             android:layout_height="0dp"
             android:orientation="vertical"
+            android:padding="@dimen/padding"
             android:layout_weight="2"
             android:layout_width="fill_parent">
 
@@ -175,7 +178,7 @@
                 android:text="@string/label_teamA"
                 android:textAlignment="center"
                 android:textColor="@color/color_secondary"
-                android:textSize="30dp"
+                android:textSize="@dimen/textSize_team"
                 android:layout_width="match_parent"/>
 
             <TextView
@@ -185,7 +188,7 @@
                 android:text="@string/label_score"
                 android:textAlignment="center"
                 android:textColor="@color/color_secondary"
-                android:textSize="50dp"
+                android:textSize="@dimen/textSize_score"
                 android:textStyle="bold"
                 android:layout_width="match_parent"/>
 
@@ -194,42 +197,46 @@
         <LinearLayout
             android:layout_height="0dp"
             android:orientation="horizontal"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:layout_width="fill_parent">
 
             <TextView
+                android:gravity="bottom"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_md3TeamA"
                 android:text="@string/label_infoMD3"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="bottom"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_matchsTeamA"
                 android:text="@string/label_infoMatchs"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="bottom"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_victoriesTeamA"
                 android:text="@string/label_infoVictories"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="bottom"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_losesTeamA"
                 android:text="@string/label_infoLoses"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
@@ -242,49 +249,55 @@
         android:layout_height="0dp"
         android:layout_marginBottom="2dp"
         android:orientation="vertical"
-        android:padding="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
         android:layout_weight="1"
         android:layout_width="fill_parent">
 
         <LinearLayout
             android:layout_height="0dp"
             android:orientation="horizontal"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:layout_width="fill_parent">
 
             <TextView
+                android:gravity="top"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_md3TeamB"
                 android:text="@string/label_infoMD3"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="top"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_matchsTeamB"
                 android:text="@string/label_infoMatchs"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="top"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_victoriesTeamB"
                 android:text="@string/label_infoVictories"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
             <TextView
+                android:gravity="top"
                 android:layout_height="fill_parent"
                 android:id="@+id/tvMain_losesTeamB"
                 android:text="@string/label_infoLoses"
                 android:textColor="@color/color_secondary"
-                android:textSize="20dp"
+                android:textSize="@dimen/textSize_info"
                 android:layout_weight="1"
                 android:layout_width="0dp"/>
 
@@ -293,8 +306,8 @@
         <LinearLayout
             android:layout_height="0dp"
             android:orientation="vertical"
-            android:paddingTop="20dp"
-            android:layout_weight="4"
+            android:padding="@dimen/padding"
+            android:layout_weight="2"
             android:layout_width="fill_parent">
 
             <TextView
@@ -304,7 +317,7 @@
                 android:text="@string/label_teamB"
                 android:textAlignment="center"
                 android:textColor="@color/color_secondary"
-                android:textSize="30dp"
+                android:textSize="@dimen/textSize_team"
                 android:layout_width="match_parent"/>
 
             <TextView
@@ -314,7 +327,7 @@
                 android:text="@string/label_score"
                 android:textAlignment="center"
                 android:textColor="@color/color_secondary"
-                android:textSize="50dp"
+                android:textSize="@dimen/textSize_score"
                 android:textStyle="bold"
                 android:layout_width="match_parent"/>
 
