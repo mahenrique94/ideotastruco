@@ -247,7 +247,6 @@
     <LinearLayout
         android:background="@color/color_primary"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
         android:orientation="vertical"
         android:paddingBottom="@dimen/padding"
         android:paddingLeft="@dimen/padding"
@@ -341,75 +340,7 @@
 
             <LinearLayout
                 android:layout_height="0dp"
-                android:orientation="horizontal"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:layout_width="fill_parent">
-
-                <Button
-                    android:background="@drawable/button"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/btnMain_minusOneTeamB"
-                    android:layout_marginRight="@dimen/margin_button"
-                    android:padding="@dimen/padding_button"
-                    android:text="@string/button_minusOne"
-                    android:textSize="@dimen/textSize_button"
-                    android:textColor="@color/color_secondary"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"/>
-
-                <Button
-                    android:background="@drawable/button"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/btnMain_minusThreeTeamB"
-                    android:layout_marginRight="@dimen/margin_button"
-                    android:padding="@dimen/padding_button"
-                    android:text="@string/button_minusThree"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="@dimen/textSize_button"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"/>
-
-                <Button
-                    android:background="@drawable/button"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/btnMain_minusSixTeamB"
-                    android:layout_marginRight="@dimen/margin_button"
-                    android:padding="@dimen/padding_button"
-                    android:text="@string/button_minusSix"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="@dimen/textSize_button"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"/>
-
-                <Button
-                    android:background="@drawable/button"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/btnMain_minusNineTeamB"
-                    android:layout_marginRight="@dimen/margin_button"
-                    android:padding="@dimen/padding_button"
-                    android:text="@string/button_minusNine"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="@dimen/textSize_button"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"/>
-
-                <Button
-                    android:background="@drawable/button"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/btnMain_minusTwelveTeamB"
-                    android:layout_marginRight="@dimen/margin_button"
-                    android:padding="@dimen/padding_button"
-                    android:text="@string/button_minusTwelve"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="@dimen/textSize_button"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:layout_width="fill_parent">
@@ -469,6 +400,74 @@
                     android:layout_marginRight="@dimen/margin_button"
                     android:padding="@dimen/padding_button"
                     android:text="@string/button_moreTwelve"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="fill_parent">
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusOneTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusOne"
+                    android:textSize="@dimen/textSize_button"
+                    android:textColor="@color/color_secondary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusThreeTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusThree"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusSixTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusSix"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusNineTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusNine"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusTwelveTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusTwelve"
                     android:textColor="@color/color_secondary"
                     android:textSize="@dimen/textSize_button"
                     android:layout_weight="1"
