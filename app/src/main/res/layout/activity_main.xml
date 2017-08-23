@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    tools:context="br.com.matheuscastiglioni.ideotastruco.MainActivity">
+
+    <LinearLayout
+        android:background="@color/color_primary"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:layout_weight="1"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent">
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusOneTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusOne"
+                    android:textSize="@dimen/textSize_button"
+                    android:textColor="@color/color_secondary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusThreeTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusThree"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusSixTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusSix"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusNineTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusNine"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusTwelveTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusTwelve"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="fill_parent">
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreOneTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreOne"
+                    android:textSize="@dimen/textSize_button"
+                    android:textColor="@color/color_secondary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreThreeTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreThree"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreSixTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreSix"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreNineTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreNine"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreTwelveTeamA"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreTwelve"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMain_nameTeamA"
+                android:text="@string/label_teamA"
+                android:textAlignment="center"
+                android:textColor="@color/color_secondary"
+                android:textSize="30dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_scoreTeamA"
+                android:text="@string/label_score"
+                android:textAlignment="center"
+                android:textColor="@color/color_secondary"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_md3TeamA"
+                android:text="@string/label_infoMD3"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_matchsTeamA"
+                android:text="@string/label_infoMatchs"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_victoriesTeamA"
+                android:text="@string/label_infoVictories"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_losesTeamA"
+                android:text="@string/label_infoLoses"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/color_primary"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:layout_weight="1"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_md3TeamB"
+                android:text="@string/label_infoMD3"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_matchsTeamB"
+                android:text="@string/label_infoMatchs"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_victoriesTeamB"
+                android:text="@string/label_infoVictories"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_losesTeamB"
+                android:text="@string/label_infoLoses"
+                android:textColor="@color/color_secondary"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:layout_weight="4"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMain_nameTeamB"
+                android:text="@string/label_teamB"
+                android:textAlignment="center"
+                android:textColor="@color/color_secondary"
+                android:textSize="30dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_scoreTeamB"
+                android:text="@string/label_score"
+                android:textAlignment="center"
+                android:textColor="@color/color_secondary"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent">
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusOneTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusOne"
+                    android:textSize="@dimen/textSize_button"
+                    android:textColor="@color/color_secondary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusThreeTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusThree"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusSixTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusSix"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusNineTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusNine"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_minusTwelveTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_minusTwelve"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="fill_parent">
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreOneTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreOne"
+                    android:textSize="@dimen/textSize_button"
+                    android:textColor="@color/color_secondary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreThreeTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreThree"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreSixTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreSix"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreNineTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreNine"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+                <Button
+                    android:background="@drawable/button"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMain_moreTwelveTeamB"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:padding="@dimen/padding_button"
+                    android:text="@string/button_moreTwelve"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="@dimen/textSize_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

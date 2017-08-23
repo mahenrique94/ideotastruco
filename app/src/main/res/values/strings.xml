@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IdeotasTruco</string>
+
+    <string name="button_minusOne">-1</string>
+    <string name="button_minusThree">-3</string>
+    <string name="button_minusSix">-6</string>
+    <string name="button_minusNine">-9</string>
+    <string name="button_minusTwelve">-12</string>
+    <string name="button_moreOne">+1</string>
+    <string name="button_moreThree">+3</string>
+    <string name="button_moreSix">+6</string>
+    <string name="button_moreNine">+9</string>
+    <string name="button_moreTwelve">+12</string>
+
+    <string name="label_infoMD3">MD3:</string>
+    <string name="label_infoMatchs">Quedas:</string>
+    <string name="label_infoVictories">Vitórias:</string>
+    <string name="label_infoLoses">Derrotas:</string>
+    <string name="label_score">0</string>
+    <string name="label_teamA">Time A</string>
+    <string name="label_teamB">Time B</string>
+</resources>
