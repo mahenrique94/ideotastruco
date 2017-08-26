@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">IdeotasTruco</string>
 
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_confirm">Confirmar</string>
     <string name="button_minusOne">-1</string>
     <string name="button_minusThree">-3</string>
     <string name="button_minusSix">-6</string>
@@ -12,8 +14,8 @@
     <string name="button_moreNine">+9</string>
     <string name="button_moreTwelve">+12</string>
 
-    <string name="label_infoMD3">MD3:</string>
-    <string name="label_infoMatchs">Quedas:</string>
+    <string name="label_infoBO3">MD3:</string>
+    <string name="label_infoMatchs">Partidas:</string>
     <string name="label_infoVictories">Vitórias:</string>
     <string name="label_infoLoses">Derrotas:</string>
     <string name="label_score">0</string>

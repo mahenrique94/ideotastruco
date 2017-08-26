@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:layout_width="match_parent">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/etEditNameTeam_name"
+        android:layout_marginBottom="@dimen/padding"
+        android:padding="@dimen/padding"
+        android:textColor="#595959"
+        android:textSize="25dp"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:background="@color/color_primary"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEditNameTeam_confirm"
+            android:layout_marginRight="@dimen/padding"
+            android:text="@string/button_confirm"
+            android:textColor="@color/color_secondary"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+
+        <Button
+            android:background="@color/color_primary"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEditNameTeam_cancel"
+            android:text="@string/button_cancel"
+            android:textColor="@color/color_secondary"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
