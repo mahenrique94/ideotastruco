@@ -2,12 +2,9 @@ package br.com.matheuscastiglioni.ideotastruco;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
-import br.com.matheuscastiglioni.ideotastruco.dao.DAO;
 import br.com.matheuscastiglioni.ideotastruco.engine.Engine;
 import br.com.matheuscastiglioni.ideotastruco.helper.DialogHelper;
 import br.com.matheuscastiglioni.ideotastruco.model.Statistics;
@@ -22,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textViewScoreTeamA;
     @BindView(R.id.tvMain_scoreTeamB)
     TextView textViewScoreTeamB;
+    private final Statistics statisticsTeamA = new Statistics();
+    private final Statistics statisticsTeamB = new Statistics();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        DAO dao = new DAO(this);
-        View.initStatisticsTeamA(dao.getStatistics("A"), this);
-        View.initStatisticsTeamB(dao.getStatistics("B"), this);
+        View.initStatisticsTeamA(this.statisticsTeamA, this);
+        View.initStatisticsTeamB(this.statisticsTeamB, this);
     }
 
     @OnClick({
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         R.id.btnMain_moreTwelveTeamA,
     })
     public void pontuationTeamA(Button pontuation) {
-        View.setResult(this.textViewScoreTeamA, Engine.process(pontuation.getText().toString(), this.textViewScoreTeamA), "A", this, this);
+        View.setResult(this.statisticsTeamA, this.statisticsTeamB, this.textViewScoreTeamA, Engine.process(pontuation.getText().toString(), this.textViewScoreTeamA), "A", this, this);
     }
 
     @OnClick({
@@ -63,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         R.id.btnMain_moreTwelveTeamB,
     })
     public void pontuationTeamB(Button pontuation) {
-        View.setResult(this.textViewScoreTeamB, Engine.process(pontuation.getText().toString(), this.textViewScoreTeamB), "B", this, this);
+        View.setResult(this.statisticsTeamA, this.statisticsTeamB, this.textViewScoreTeamB, Engine.process(pontuation.getText().toString(), this.textViewScoreTeamB), "B", this, this);
     }
 
     @OnClick({

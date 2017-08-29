@@ -5,7 +5,6 @@ import android.content.Context;
 import android.widget.TextView;
 
 import br.com.matheuscastiglioni.ideotastruco.R;
-import br.com.matheuscastiglioni.ideotastruco.dao.DAO;
 import br.com.matheuscastiglioni.ideotastruco.helper.DialogHelper;
 import br.com.matheuscastiglioni.ideotastruco.model.Statistics;
 import br.com.matheuscastiglioni.ideotastruco.type.TeamType;
@@ -18,12 +17,14 @@ import br.com.matheuscastiglioni.ideotastruco.validator.Validator;
 public abstract class View {
 
     public static void initStatisticsTeamA(Statistics statistics, Activity activity) {
+        setBo3(statistics.getBo3(), (TextView) activity.findViewById(R.id.tvMain_bo3TeamA), activity);
         setMatchs(statistics.getMatchs(), (TextView) activity.findViewById(R.id.tvMain_matchsTeamA), activity);
         setWins(statistics.getWins(), (TextView) activity.findViewById(R.id.tvMain_victoriesTeamA), activity);
         setLoses(statistics.getLoses(), (TextView) activity.findViewById(R.id.tvMain_losesTeamA), activity);
     }
 
     public static void initStatisticsTeamB(Statistics statistics, Activity activity) {
+        setBo3(statistics.getBo3(), (TextView) activity.findViewById(R.id.tvMain_bo3TeamB), activity);
         setMatchs(statistics.getMatchs(), (TextView) activity.findViewById(R.id.tvMain_matchsTeamB), activity);
         setWins(statistics.getWins(), (TextView) activity.findViewById(R.id.tvMain_victoriesTeamB), activity);
         setLoses(statistics.getLoses(), (TextView) activity.findViewById(R.id.tvMain_losesTeamB), activity);
@@ -45,26 +46,30 @@ public abstract class View {
         textView.setText(String.format("%s %d", activity.getResources().getString(R.string.label_infoLoses), loses));
     }
 
-    public static void setResult(TextView score, Object pontuation, String team, Context context, Activity activity) {
+    public static void setResult(Statistics statisticsTeamA, Statistics statisticsTeamB, TextView score, Object pontuation, String team, Context context, Activity activity) {
         if (Validator.pontuationIsSmallerThenZero(pontuation)) {
             score.setText("0");
         } else if (Validator.pontuationIsGreaterThenTwelve(pontuation) || Validator.pontuationIsEqualsTwelve(pontuation)) {
             score.setText("12");
-            DAO dao = new DAO(context);
-            dao.updateStatistics("matchs", team);
-            dao.updateStatistics("wins", team);
-            dao.updateStatistics("matchs", TeamType.TEAM.getTeam(team).getEnemy());
-            dao.updateStatistics("loses", TeamType.TEAM.getTeam(team).getEnemy());
-            View.updateStatistics(context, activity);
+            if (team.equals("A")) {
+                statisticsTeamA.winner();
+                statisticsTeamB.loser();
+            } else {
+                statisticsTeamB.winner();
+                statisticsTeamA.loser();
+            }
+            statisticsTeamA.matchFinished();
+            statisticsTeamB.matchFinished();
+            updateStatistics(statisticsTeamA, statisticsTeamB, activity);
             DialogHelper.build(context, activity);
         } else {
             score.setText(pontuation.toString());
         }
     }
 
-    public static void updateStatistics(Context context, Activity activity) {
-        initStatisticsTeamA(new DAO(context).getStatistics("A"), activity);
-        initStatisticsTeamB(new DAO(context).getStatistics("B"), activity);
+    public static void updateStatistics(Statistics statisticsTeamA, Statistics statisticsTeamB, Activity activity) {
+        initStatisticsTeamA(statisticsTeamA, activity);
+        initStatisticsTeamB(statisticsTeamB, activity);
     }
 
 }

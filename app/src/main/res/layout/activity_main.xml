@@ -203,6 +203,16 @@
             <TextView
                 android:gravity="bottom"
                 android:layout_height="fill_parent"
+                android:id="@+id/tvMain_bo3TeamA"
+                android:text="@string/label_infoBO3"
+                android:textColor="@color/color_secondary"
+                android:textSize="@dimen/textSize_info"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:gravity="bottom"
+                android:layout_height="fill_parent"
                 android:id="@+id/tvMain_matchsTeamA"
                 android:text="@string/label_infoMatchs"
                 android:textColor="@color/color_secondary"
@@ -249,6 +259,16 @@
             android:orientation="horizontal"
             android:layout_weight="0.2"
             android:layout_width="fill_parent">
+
+            <TextView
+                android:gravity="top"
+                android:layout_height="fill_parent"
+                android:id="@+id/tvMain_bo3TeamB"
+                android:text="@string/label_infoBO3"
+                android:textColor="@color/color_secondary"
+                android:textSize="@dimen/textSize_info"
+                android:layout_weight="1"
+                android:layout_width="0dp"/>
 
             <TextView
                 android:gravity="top"

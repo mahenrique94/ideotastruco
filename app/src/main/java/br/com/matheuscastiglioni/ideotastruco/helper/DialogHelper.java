@@ -5,6 +5,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import br.com.matheuscastiglioni.ideotastruco.R;
@@ -45,7 +48,42 @@ public abstract class DialogHelper {
     public static void buildeEditTeamName(Context context, Activity activity, TextView teamName) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
         builder.setView(R.layout.edit_name_team);
-        builder.show();
+        AlertDialog alert = builder.create();
+        alert.show();
+        configureAlert(alert, teamName);
+    }
+
+    private static void configureAlert(AlertDialog alert, TextView teamName) {
+        setTeamNameInEdit(alert, teamName);
+        setCancelAction(alert);
+        setConfirmAction(alert, teamName);
+    }
+
+    private static void setTeamNameInEdit(AlertDialog alert, TextView teamName) {
+        EditText editTextTeamName = alert.findViewById(R.id.etEditNameTeam_name);
+        editTextTeamName.setText(teamName.getText().toString());
+    }
+
+    private static void setCancelAction(final AlertDialog alert) {
+        Button button = alert.findViewById(R.id.btnEditNameTeam_cancel);
+        button.setOnClickListener(new android.view.View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View view) {
+                alert.hide();
+            }
+        });
+    }
+
+    private static void setConfirmAction(final AlertDialog alert, final TextView teamName) {
+        Button button = alert.findViewById(R.id.btnEditNameTeam_confirm);
+        button.setOnClickListener(new android.view.View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View view) {
+                EditText editTextTeamName = alert.findViewById(R.id.etEditNameTeam_name);
+                teamName.setText(editTextTeamName.getText().toString());
+                alert.hide();
+            }
+        });
     }
 
 }
